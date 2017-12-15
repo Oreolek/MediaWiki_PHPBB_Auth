@@ -22,7 +22,7 @@ You will need to put the name you choose in the code below.
 NOTE: In order for a user to be able to use the wiki they will need to 
 be a member of the group you made in the step above.
 
-Copy Auth_phpBB folder into /extensions/
+Copy this folder into /extensions/ as `Auth_phpBB` so that it would be under `/extensions/Auth_phpBB`
 
 Open LocalSettings.php. Put this at the bottom of the file. Edit as needed.
 
