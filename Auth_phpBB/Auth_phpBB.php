@@ -1,38 +1,38 @@
 <?php
 
-    /**
-     * This file makes MediaWiki use a phpbb user database to
-     * authenticate with. This forces users to have a PHPBB account
-     * in order to log into the wiki. This can also force the user to
-     * be in a group called Wiki.
-     *
-     * With 3.0.x release this code was rewritten to make better use of
-     * objects and php5. Requires MediaWiki 1.11.x, PHPBB3 and PHP5.
-     *
-     * This program is free software; you can redistribute it and/or modify
-     * it under the terms of the GNU General Public License as published by
-     * the Free Software Foundation; either version 2 of the License, or
-     * (at your option) any later version.
-     *
-     * This program is distributed in the hope that it will be useful,
-     * but WITHOUT ANY WARRANTY; without even the implied warranty of
-     * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-     * GNU General Public License for more details.
-     *
-     * You should have received a copy of the GNU General Public License along
-     * with this program; if not, write to the Free Software Foundation, Inc.,
-     * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
-     * http://www.gnu.org/copyleft/gpl.html
-     *
-     * @package MediaWiki
-     * @subpackage Auth_phpBB
-     * @author Nicholas Dunnaway
-     * @copyright 2004-2016 Digitalroot Technologies
-     * @license http://www.gnu.org/copyleft/gpl.html
-     * @link https://github.com/Digitalroot/MediaWiki_PHPBB_Auth
-     * @link http://digitalroot.net/
-     *
-     */
+/**
+ * This file makes MediaWiki use a phpbb user database to
+ * authenticate with. This forces users to have a PHPBB account
+ * in order to log into the wiki. This can also force the user to
+ * be in a group called Wiki.
+ *
+ * With 3.0.x release this code was rewritten to make better use of
+ * objects and php5. Requires MediaWiki 1.11.x, PHPBB3 and PHP5.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ * http://www.gnu.org/copyleft/gpl.html
+ *
+ * @package MediaWiki
+ * @subpackage Auth_phpBB
+ * @author Nicholas Dunnaway
+ * @copyright 2004-2016 Digitalroot Technologies
+ * @license http://www.gnu.org/copyleft/gpl.html
+ * @link https://github.com/Digitalroot/MediaWiki_PHPBB_Auth
+ * @link http://digitalroot.net/
+ *
+ */
 
 // error_reporting(E_ALL); // Debug
 
@@ -43,13 +43,13 @@ if (!class_exists('AuthPlugin') || !interface_exists('iAuthPlugin'))
      * Auth Plug-in
      *
      */
-    require_once './includes/AuthPlugin.php';
+    require_once dirname(__FILE__).'./../../includes/AuthPlugin.php';
 
     /**
      * Auth Plug-in Interface
      *
      */
-    require_once './extensions/iAuthPlugin.php';
+    require_once dirname(__FILE__).'/iAuthPlugin.php';
 
 }
 
@@ -68,7 +68,7 @@ if (!class_exists('PasswordHash'))
      *      http://www.openwall.com/phpass/
      *
      */
-    require_once './extensions/PasswordHash.php';
+    require_once dirname(__FILE__).'/PasswordHash.php';
 }
 
 /**
