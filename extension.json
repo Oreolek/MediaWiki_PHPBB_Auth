@@ -8,7 +8,39 @@
   },
   "AutoloadClasses": {
     "PasswordHash": "PasswordHash.php",
-    "Auth_phpBB": "Auth_phpBB.php"
+    "Auth_phpBB": "Auth_phpBB.class.php"
+  },
+  "callback": "",
+  "config": {
+    "Auth_Config_useCanonicalCase": {
+      "value": "false",
+      "description": "normalize usernames"
+    },
+    "Auth_Config_wikiGroup": "Wiki",
+    "Auth_Config_useWikiGroup": {
+      "value": "false",
+      "description": "if true, only users in Auth_Confir_wikiGroup can edit the wiki"
+    },
+    "Auth_Config_mysqlHost": {
+      "value": "false",
+      "description": "set if not $wgDBhost"
+    },
+    "Auth_Config_mysqlUser": {
+      "value": "false",
+      "description": "set if not $wgDBuser"
+    },
+    "Auth_Config_mysqlPassword": {
+      "value": "false",
+      "description": "set if not $wgDBpassword"
+    },
+    "Auth_Config_mysqlDatabase": {
+      "value": "false",
+      "description": "set if not $wgDBname"
+    },
+    "Auth_Config_userTable": "phpbb3_users",
+    "Auth_Config_groupTable": "phpbb3_groups",
+    "Auth_Config_userGroupTable": "phpbb3_user_group",
+    "Auth_Config_phpBBPath": "../phpbb/"
   },
   "manifest_version": 1
 }
