@@ -34,43 +34,6 @@
  *
  */
 
-// error_reporting(E_ALL); // Debug
-
-// First check if class and interface has already been defined.
-if (!class_exists('AuthPlugin') || !interface_exists('iAuthPlugin'))
-{
-    /**
-     * Auth Plug-in
-     *
-     */
-    require_once dirname(__FILE__).'./../../includes/AuthPlugin.php';
-
-    /**
-     * Auth Plug-in Interface
-     *
-     */
-    require_once dirname(__FILE__).'/iAuthPlugin.php';
-
-}
-
-// First check if the PasswordHash class has already been defined.
-if (!class_exists('PasswordHash'))
-{
-    /**
-     * PasswordHash Class
-     *
-     * Portable PHP password hashing framework.
-     *
-     * Written by Solar Designer <solar at openwall.com> in 2004-2006
-     * and placed in the public domain.
-     *
-     * The homepage URL for this framework is:
-     *      http://www.openwall.com/phpass/
-     *
-     */
-    require_once dirname(__FILE__).'/PasswordHash.php';
-}
-
 /**
  * Handles the Authentication with the PHPBB database.
  *

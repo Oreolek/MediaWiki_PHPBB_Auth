@@ -1,0 +1,14 @@
+{
+  "name": "Auth_phpBB",
+  "type": "other",
+  "version": "1.0.0",
+  "license-name": "GPL-2.0+",
+  "requires": {
+    "MediaWiki": ">= 1.26.0"
+  },
+  "AutoloadClasses": {
+    "PasswordHash": "PasswordHash.php",
+    "Auth_phpBB": "Auth_phpBB.php"
+  },
+  "manifest_version": 1
+}
